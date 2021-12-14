@@ -22,8 +22,7 @@ const isIE =
       new PublicClientApplication({
         auth: {
           clientId: environment.CLIENT_ID,
-          redirectUri: '/auth/callback',
-          authority: 'a88458ab-5f82-459a-9562-5b466be67d37',
+          redirectUri: 'https://ticketing.test/auth/callback',
         },
         cache: {
           cacheLocation: 'localstorage',

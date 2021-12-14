@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   HOST_URL:"http://ticketing.test",
+  CLIENT_ID:"160e8acf-863c-47fe-a199-bc3d5c4767e6",
 };
 
 /*

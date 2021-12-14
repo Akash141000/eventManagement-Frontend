@@ -41,6 +41,13 @@ yarn-error.log
 testem.log
 /typings
 
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
 # System Files
 .DS_Store
 Thumbs.db

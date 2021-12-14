@@ -1,0 +1,13 @@
+<div>
+    <button (click)="fetchAll()">fetch events</button>
+    <div *ngFor="let event of events">
+        <div>
+            {{event.title}}
+            {{event.amount}}
+            {{event.description}}
+            {{event.eventType}}
+            {{event.timing.start}}
+            {{event.timing.end}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<form (submit)="addEvent(form)" #form="ngForm">
+  <label for="title">Title</label>
+  <input id="title" name="title" type="text" ngModel required/>
+  <label for="description">Description</label>
+  <input id="description" name="description" type="text" ngModel  required/>
+  
+  <label for="eventType">Event type</label>
+  <select  id="eventType" name="eventType"  ngModel="paid" #eventType>
+    <option  value="free">free</option>
+    <option value="paid" selected>paid</option>
+  </select>
+    <label *ngIf="eventType.selectedIndex === 1" for="amount">Amount</label>
+    <input *ngIf="eventType.selectedIndex === 1" id="amount" name="amount" type="text" ngModel required />
+
+  <label for="timing">Timing</label>
+  <div ngModelGroup="timing">
+  <input id="timing" name="start" type="datetime-local" ngModel required/>
+  <input id="timing" name="end" type="datetime-local" ngModel required />
+    </div>
+  <button type="submit">Add event</button>
+</form>

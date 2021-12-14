@@ -1,0 +1,16 @@
+<div>
+<nav>
+    <a routerLink="/"><div class="nav-title">Event Management</div></a> 
+    <div *ngIf="!isLogged">
+        <a routerLink="/login">Login</a>
+        <a routerLink="/signup">Signup</a>
+        <a routerLink="/event/purchase">Payment</a>
+
+    </div>
+    <div *ngIf="isLogged">
+        <a routerLink="/event/create-event">Add Event</a>
+        <a routerLink="/event/events">Events</a>
+        <button (click)="logout()" *ngIf="isLogged">Logout</button>
+    </div>
+</nav>
+</div>

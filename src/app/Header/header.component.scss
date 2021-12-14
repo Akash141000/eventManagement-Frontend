@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: whitesmoke;
+
+    a{
+        text-decoration: none;
+    }
+
+    .nav-title{
+        cursor: pointer;
+        font-size: 2rem;
+    }
+   
+    div a{
+        font-size: 1.3rem;
+        margin: 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover{
+            color: blue;
+        }
+    }
+}
+
